@@ -1,0 +1,112 @@
+@import "http://blog.valerauko.net/layout/main_blueblack.css";
+body {
+background:#000 url('background.gif') left top repeat;
+color:#111;
+}
+a:link, a.nolink {
+color:#222;
+}
+a:visited {
+color:#333;
+}
+a:hover {
+color:#555;
+}
+a:active {
+color:#444;
+}
+
+#header {
+background:#fff;
+border-bottom:1px solid #ccc;
+}
+#header a {
+background:#000 url('header.png') left top no-repeat;
+border-bottom:1px solid #ccc;
+border-top:1px solid #ccc;
+}
+#left .top, #right .top {
+background:url('s_top.png') left top no-repeat;
+}
+#left .center, #right .center {
+background:url('s_cen.png') left top repeat-y;
+}
+#left .bottom, #right .bottom {
+background:url('s_bot.png') left bottom no-repeat;
+}
+#content .top {
+background:url('c_top.png') left top no-repeat;
+}
+#content .center {
+background:url('c_cen.png') left top repeat-y;
+}
+#content .bottom {
+background:url('c_bot.png') left bottom no-repeat;
+}
+
+.post {
+border-bottom:1px solid #666;
+}
+.post .data {
+border-top:1px solid #ccc;
+}
+.bq, #content blockquote {
+background:#eee;
+border:1px solid #666;
+border-left:2px solid #333;
+}
+a.file:link img {
+border:1px solid #999;
+}
+a.file:visited img {
+border:1px solid #888;
+}
+a.file:hover img, a.file:active img {
+border:1px solid #ccc;
+}
+.edit {
+background:#eee;
+border-top:1px solid #999;
+border-bottom:1px solid #999;
+}
+#comment_form  input.text, #regform input.text, #comment_form textarea {
+background:#fff;
+border:1px solid #888;
+}
+#asc {
+background:url('order_asc_normal.gif') left top no-repeat;
+}
+#asc_act {
+background:url('order_asc_active.gif') left top no-repeat;
+}
+#desc {
+background:url('order_desc_normal.gif') left top no-repeat;
+}
+#desc_act {
+background:url('order_desc_active.gif') left top no-repeat;
+}
+.comment_box {
+border:1px solid #888;
+}
+.comment_data {
+border-bottom:1px solid #ccc;
+}
+.comment_num {
+color:#ccc;
+}
+.comment_avy img {
+border:1px solid #aaa;
+}
+.rss_small {
+background:url('rss_small_normal.gif') left top no-repeat;
+}
+.rss_small:hover, .rss_small:active {
+background:url('rss_small_active.gif') left top no-repeat;
+}
+
+input.input_text, input.submit {
+border:1px solid #888;
+background:#fff;
+color:#111;
+}
+.h { font-variant:small-caps; }

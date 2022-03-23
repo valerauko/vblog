@@ -1,0 +1,55 @@
+/* CSS Document */
+body {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+word-spacing:3px;
+color:#000;
+text-align:justify;
+}
+a {
+text-decoration:underline;
+color:#000;
+margin:0 2px 0 2px;
+}
+body:before {
+content:"Shadow Arts [vBlog]";
+}
+#menu, #lid, #rid, #txt {
+display:none;
+}
+.content h1 {
+text-align:right;
+font-size:14px;
+font-weight:bold;
+padding-right:0.5cm;
+}
+.post {
+margin:1em 2cm 2em 2cm;
+}
+.post div {
+text-indent:0.5cm;
+}
+.post div img {
+margin:0.5em 0.25cm 0.5em 0.25cm;
+}
+.post ul {
+margin:1em 1cm 1em 1cm;
+padding:0;
+}
+.post ul li {
+list-style-type:none;
+text-indent:0.5cm;
+}
+.header {
+text-align:center;
+margin-bottom:0.5em;
+font-weight:bold;
+float:none;
+}
+.footer {
+float:left;
+}
+.footer, .cnum {
+margin:0.5em 0 0.5em 0;
+text-indent:0cm;
+}

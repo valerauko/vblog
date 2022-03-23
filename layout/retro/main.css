@@ -1,0 +1,42 @@
+@import '../main.css';
+html, body, ul, li, div, h1, h2, h3, h4, h5, h6, p, input, textarea, form, fieldset, option, select, img {
+color:#984;
+font-family:"Courier New", Courier, monospace;
+font-size:12px;
+}
+body {
+background:#000;
+}
+#surround {
+margin:0 auto;
+width:820px;
+background:url('background.jpg') left top repeat;
+border-left:1px solid #432;
+border-right:1px solid #432;
+padding:45px;
+}
+.top, .bottom {
+display:none;
+}
+.bq, #content blockquote {
+width:80%;
+}
+.center {
+background:#210;
+border:1px solid #432;
+}
+#content {
+width:500px;
+float:left;
+}
+#content, #left {
+margin-left:5px;
+}
+.sidebar {
+width:150px;
+float:left;
+}
+.sidebar li:first-letter {
+color:#f90;
+font-weight:bold;
+}

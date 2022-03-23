@@ -1,0 +1,42 @@
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^resp(/(([0-9]+)(/([A-Za-z0-9-]+)(/)?)?)?)? index.php?resp=$3 [NC]
+RewriteRule ^link(/(.*)?)? index.php?link=$2 [NC]
+RewriteRule ^rss(/((comments|posts|categ|lang)(/(([0-9]+)(/(([A-Za-z0-9-]+)(/)?)?)?)?)?)?)? index.php?mode=rss&show=$3&post=$6 [NC]
+RewriteRule ^archive(/(([0-9]{4})((/([0-9]{2})?((/)+page/([0-9]{1,3}))?)?)?)?(/)?)? index.php?archive=$3&month=$6&page=$9 [NC]
+RewriteRule ^post(s)?(/(([0-9]+)(/([a-zA-Z0-9-]+(/(order/(asc|desc)(/)?)?)?)?)?)?)? index.php?post=$4&order=$9 [NC]
+RewriteRule ^categ(/(([0-9]+)(/(([A-Za-z0-9-]+)(/(page/([0-9]+)(/)?)?)?)?)?))? index.php?categ=$3&page=$9 [NC]
+# RewriteRule ^index\.wml index.php?mode=wap [NC]
+# RewriteRule ^wap(/)? index.php?mode=wap [NC]
+# RewriteRule ^wap/archive/([0-9]+)(/)? index.php?mode=wap&archive=$1 [NC]
+# RewriteRule ^wap/post/([0-9]+)(/)? index.php?mode=wap&post=$1 [NC]
+RewriteRule ^profile(/(([0-9]+|self)(/((edit)(/)?)?)?)?)? index.php?profile=$3&edit=$6 [NC]
+RewriteRule ^activate(/(([A-Za-z0-9-]{32})(/)?)?)? index.php?activate=$3 [NC]
+RewriteRule ^lang(/(([0-9]+)(/(([A-Za-z0-9-]+)(/)?)?)?)?)? index.php?lang=$3 [NC]
+RewriteRule ^logout(/((done)(/)?)?)? index.php?logout=$3 [NC]
+RewriteRule ^(devfav|files|podcast)(/(.+))? index.php?mode=file&dir=$1&file=$3 [NC]
+RewriteRule ^uploads/files/show(/(.+))? index.php?mode=file&dir=files&file=$2 [NC]
+RewriteRule ^(search|stats|register)(/)? index.php?page=$1 [NC]
+RewriteRule ^page(/([A-Za-z0-9-])(/)?)? index.php?page=$2 [NC]
+RewriteRule ^setlayout(/([0-9-]+)(/([A-Za-z0-9-]+)?(/)?)?)? index.php?setlayout=$2 [NC]
+RewriteRule ^admin(/([A-Za-z-]+)(/([A-Za-z0-9-]+)(/([A-Za-z0-9-]+)(/)?)?)?)? index.php?mode=admin&page=$2&subpage=$4&bottom=$6 [NC]
+</IfModule>
+
+ErrorDocument 400 /_vti_errors/e_400.php
+ErrorDocument 401 /_vti_errors/e_401.php
+ErrorDocument 403 /_vti_errors/e_403.php
+ErrorDocument 404 /_vti_errors/e_404.php
+ErrorDocument 500 /_vti_errors/e_500.php
+ErrorDocument 503 /_vti_errors/e_500.php

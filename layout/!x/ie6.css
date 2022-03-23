@@ -1,0 +1,23 @@
+/* vBlog IE 6 css, a valid fix. sorry. use the better browsers (firefox, opera) or at least IE7 */
+#content .top {
+height:400px;
+background:url('ie_c_top.gif') left bottom no-repeat;
+}
+#content .center {
+background:url('ie_c_cen.gif') left top repeat-y;
+}
+#content .bottom {
+background:url('ie_c_bot.gif') left top no-repeat;
+}
+#left .top, #right .top {
+background:url('ie_s_top.gif') left bottom no-repeat;
+}
+#left .center, #right .center {
+background:url('ie_s_cen.gif') left top repeat-y;
+}
+#left .bottom, #right .bottom {
+background:url('ie_s_bot.gif') left top no-repeat;
+}
+#right li {
+height:1em;
+}

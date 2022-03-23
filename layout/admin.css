@@ -1,0 +1,124 @@
+html, head, body, ul, li, a, input, textarea, option, select, img, p, div, form, fieldset, h1, h2, h3, h4, h5, h6 {
+padding:0;
+margin:0;
+border:none;
+outline:none;
+font:normal normal normal 11px Arial, Helvetica, sans-serif;
+vertical-align:top;
+}
+body {
+background:#FFF url('blue/background.gif') left top repeat;
+text-align:justify;
+cursor:default;
+color:#137;
+}
+ul, li {
+list-style:none outside none;
+}
+h1, h2, h3, h4, h5, h6 {
+font-weight:bold;
+}
+h1 {
+width:100%;
+height:20px;
+text-align:center;
+border-bottom:1px solid #57a;
+font-size:18px;
+background:#fff;
+}
+
+#login {
+padding:2px;
+width:250px;
+margin:3em auto;
+border-bottom:1px solid #57a;
+background:#fff;
+}
+#login .input_text, .submit {
+border-bottom:1px solid #57a;
+padding:1px;
+background:#eef;
+color:#137;
+margin-bottom:1px;
+}
+#login .input_text {
+width:200px;
+}
+
+#hold {
+width:720px;
+margin:0 auto;
+}
+
+input {
+margin:0 2px;
+}
+#left, #main {
+background:#fff;
+padding:2px;
+}
+#main {
+float:left;
+width:600px;
+border-bottom:1px solid #57a;
+border-right:1px solid #57a;
+}
+#left {
+width:100px;
+float:left;
+border:1px solid #57a;
+border-top:none;
+}
+#left ul li {
+padding:2px 0;
+text-indent:5px;
+width:100%;
+}
+#left ul li:hover {
+background:#acf;
+}
+#left ul li.selected {
+background:#acf;
+}
+fieldset {
+float:left;
+}
+.wide {
+width:75%;
+clear:left;
+margin-right:2px;
+}
+.right {
+width:20%;
+clear:right;
+}
+ul#buttons {
+clear:both;
+}
+ul#buttons li {
+float:left;
+border:1px solid #57a;
+margin:1px;
+padding:1px;
+}
+#posttitle, #postbody, #longbody, #post_submit, #schedule input, #avatar, #file {
+border:1px solid #57a;
+}
+#posttitle, #postbody, #longbody {
+width:400px;
+}
+#postbody, #longbody {
+height:250px;
+clear:both;
+}
+#post_submit {
+width:40px;
+margin:3px auto;
+}
+#schedule label {
+display:none;
+}
+#schedule input {
+margin:1px;
+padding:1px;
+}

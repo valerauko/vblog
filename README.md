@@ -1,6 +1,6 @@
 # vblog 2.0
 
-This is the ancient blog engine I wrote myself and actually used to power the [blog](blog.valerauko.net/) from about 2006 to 2014 when it just wouldn't work anymore and I switched to using WP.
+This is the ancient blog engine I wrote myself and actually used to power the [blog](https://blog.valerauko.net/) from about 2006 to [2014](https://blog.valerauko.net/2014/07/06/importalgatok/) when it just wouldn't work anymore and I switched to using WP.
 
 It's the source code as I found it in an old backup file. I don't have version history (hell I didn't even know git was a thing).
 
